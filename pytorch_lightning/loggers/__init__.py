@@ -133,3 +133,10 @@ except ImportError:  # pragma: no-cover
     pass  # pragma: no-cover
 else:
     __all__.append('TrainsLogger')
+
+try:
+    from pytorch_lightning.loggers.gdrive import GDriveLogger
+except ImportError:  # pragma: no-cover
+    pass  # pragma: no-cover
+else:
+    __all__.append('GDriveLogger')
